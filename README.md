@@ -1,2 +1,2 @@
-# newtonmandi191.github.io
+# newtonmandi.github.io
 my website
