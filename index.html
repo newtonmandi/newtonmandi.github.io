@@ -28,7 +28,7 @@
                 padding: 10px;
             }
             nav header {
-                display: inline-block;
+                display: inline-block;os 
                 align-items: center;
                 color: rgb(100, 99, 102);
                 flex: 1;
@@ -53,13 +53,14 @@
             main {
                 background: rgb(255, 255, 255);
                 display: flex;
+                margin: 10px;
             }
             [class=sidebar] {
                 margin-right: 25px;
                 padding: 10px;
             }
             [class=sidebar] img {
-                width: 200px;
+                width: 400px;
             }
             [class=content] {
                 flex: 1;
@@ -70,6 +71,14 @@
             }
         </style>
     </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+              $("button").click(function(){
+                  $("ul.professional-interests").fadeToggle();
+              });
+          });
+    </script>
 <body>
   <div id="all-contents">
     
@@ -99,6 +108,19 @@
     </ul>
         </section>
     </div>
+    </main>
+    <main>
+       <div class="content">
+          <header>Professional Interests</header>
+          <section class="interests">
+            <button>Click Me!!!</button>
+            <ul class="professional-interests">
+                <li>Arcitecture</li>
+                <li>Linoleum Print Making</li>
+                <li>Competing in Track and Field</li>
+            </ul>
+          </section>
+       </div>
     </main>
     
     </div>  
